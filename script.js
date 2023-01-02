@@ -1,12 +1,15 @@
 const sun = new Image();
 const moon = new Image();
 const earth = new Image();
+
+
 function init() {
   sun.src = "canvas_sun.png";
   moon.src = "canvas_moon.png";
   earth.src = "canvas_earth.png";
   window.requestAnimationFrame(draw);
 }
+
 
 function draw() {
   const ctx = document.getElementById("canvas").getContext("2d");
@@ -49,5 +52,6 @@ function draw() {
 
   window.requestAnimationFrame(draw);
 }
+
 
 init();
